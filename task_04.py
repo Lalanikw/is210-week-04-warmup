@@ -7,6 +7,10 @@ MAX_LENGTH = 80
 LONGSTR = 'short'
 
 # You code goes here
+print len(MYINPUT)
 
-OUTPUT = 'That certainly was a {} story!'.format(LONGSTR)
-print OUTPUT
+if len(MYINPUT) > 2:
+    print 'long'
+    print 'That certainly was a {} story'.format('long')
+else:
+    print 'That certainly was a {} story'.format(LONGSTR)
